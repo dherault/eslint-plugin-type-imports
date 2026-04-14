@@ -1,0 +1,54 @@
+{
+  "name": "eslint-plugin-type-imports",
+  "version": "0.0.0",
+  "description": "An eslint plugin to enforce consistent usage of TypeScript type imports",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dherault/eslint-plugin-type-imports.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dherault/eslint-plugin-type-imports/issues"
+  },
+  "homepage": "https://github.com/dherault/eslint-plugin-type-imports",
+  "keywords": [
+    "eslint",
+    "eslint plugin",
+    "typescript",
+    "type",
+    "import",
+    "imports",
+    "lint",
+    "linting"
+  ],
+  "author": "David Hérault <dherault@gmail.com> (https://github.com/dherault)",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "version": "auto-changelog -p && git add CHANGELOG.md",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/eslint": "^9.6.1",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^25.6.0",
+    "@typescript-eslint/parser": "^8.58.2",
+    "auto-changelog": "^2.5.0",
+    "eslint": "^10.2.0",
+    "jest": "^30.3.0",
+    "ts-jest": "^29.4.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.2"
+  },
+  "peerDependencies": {
+    "eslint": "^10.0.0"
+  }
+}
