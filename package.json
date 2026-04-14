@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-type-imports",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "An eslint plugin to enforce consistent usage of TypeScript type imports",
   "license": "MIT",
   "repository": {
